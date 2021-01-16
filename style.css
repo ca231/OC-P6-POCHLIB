@@ -1,0 +1,237 @@
+@charset "ISO-8859-1";
+body {
+	font-family: 'Montserrat','sans-serif';
+	text-align: center;
+	font-size: 1.2em;
+	width:auto;
+	}
+#logo {
+
+	width:10%;
+	height:10%;
+	align-items:center;
+}
+#title {
+	background-origin: padding-box;
+} 
+ 
+#myBooks {
+	justify-content:space-between;
+	align-items:center; 
+	display:flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+h1 {
+	width: 80%;
+	height: 40%;
+	font-size:1.9em;
+	font-weight: bold;
+	text-align: center; 
+	background-color: rgb(95, 211, 211);
+	border-radius:20px / 10px;
+	border-style:ridge;
+	box-shadow: 6px 6px 6px rgb(81, 156, 175);
+	padding: 0.5em;
+	align-items:center;
+	color:rgb(1, 15, 15);		
+}
+.h2 {	
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+.DescriptionLivre {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}	
+#divButtonSearch {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 15px auto;
+}
+#blockfields {
+  max-width: 700px;
+  text-align: left;
+  margin: auto;
+  width: 100%;
+} 
+/* Ecran de recherche Livre (champs de saisie) */
+#titreLivre, #AuteurLivre {
+  width: 100%;
+  height: 20px;
+  /* font-size: 0.9em; */
+
+  font-family: 'Montserrat','sans-serif';
+  color: grey;
+  margin-top: 3px;
+  margin-bottom: 15px;
+} 
+
+#ajoutLivre {
+	width:100%;
+	height:2em;
+	font-size: 20px;
+	padding: 10px 20px;
+	border-radius:  8px;
+	border-style:ridge;
+	text-align:center;
+	font-weight: bold;
+	margin-bottom: 10px;
+	box-shadow: 6px 6px 0px #519caf;
+	align-items:center;
+	margin:5px;
+}
+#RechercheButton {
+	width:30%;
+	height:2em;
+	font-size: 20px;
+	padding: 10px 20px;
+	border-radius:  8px;
+	border-style:ridge;
+	text-align:center;
+	font-weight: bold;
+	margin-bottom: 10px;
+	box-shadow: 6px 6px 0px rgb(81, 156, 175);
+	align-items:center;
+	cursor: pointer;
+	margin: 5px;
+	}
+#AnnulerButton {
+	display: inline-block;
+	width:30%;
+	height:2em;
+	font-size: 20px;
+	font-weight: 1em;
+	padding: 10px 20px;
+	border-radius:  8px;
+	border-style:ridge;
+	text-align:center;
+	font-weight: bold;
+	margin-bottom: 10px;
+	box-shadow: 6px 6px 0px rgb(231, 87, 4);
+	align-items:center;
+	margin: 5px;
+	}
+p {
+	margin-bottom: 0px;
+}
+label {
+	font-size:0.5em;
+	font-weight: normal;
+	margin-bottom:2px;
+} 
+.FormsSearchLivre
+{
+	max-width:700px;
+	text-align:left;
+	margin: auto;
+	width: 100%;
+	padding : 1em;
+	border: 1px solid #167a7a; 
+	border-radius: 1em;
+	align-items:center;
+}
+/* textarea {
+	vertical-align: top;
+	height:5em; 
+}*/
+input,textarea {
+	width:80%;
+	box-sizing: border-box;
+	border: 1px solid #999;
+
+}
+#bookList {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin: auto;
+	justify-content: center;
+}
+.bookItem
+{
+	width: 30%;
+	display: flex;
+	flex-direction: column;
+	/* box-sizing: border-box;  */
+	text-align: left;
+	border: 2px solid rgb(4, 122, 107);
+	background-color: rgb(252, 251, 246);
+	margin: 15px;
+	padding: 10px;
+}
+.headerSection , .sectionResultat
+{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 80px;
+}
+h3 
+{
+  font-size: 1.2em;
+  margin-top: 0px;
+  margin-right: 10px;
+}
+
+.bookDescription 
+{
+  margin-bottom: 10px;
+}
+.couvertureLivre {
+	display: block;
+	margin: 0 auto;
+}
+#aucunlivre {
+	
+	padding: 0.5em;
+	align-items:center;
+	color:rgb(46, 51, 51);		
+}
+
+	
+	@media all and (max-width: 768px)
+	{
+	  #RechercheButton,#AnnulerButton,  #blockfields 
+	  {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		width: 90%;
+		margin: 5px auto;
+	  }
+	  #reset 
+	  {
+		margin-left: 0px;
+		margin-top: 10px;
+	  }
+	  #titreLivre, #AuteurLivre 
+	  {
+		width: 100%;
+		margin-bottom: 20px;
+	  }
+	  .bookList
+	  {
+		width: 95%;
+		margin: 5px auto;
+	  }
+	  .bookItem 
+	  {
+		width: 45%;
+		margin: 3px auto;
+		padding: 5px;
+	  }
+
+	}
+	
+	@media all and (max-width: 480px) 
+	{
+	  .bookItem 
+	  {
+		width: 95%;
+		margin: 5px auto;
+	  }
+	}
